@@ -7,7 +7,9 @@ An AI-powered job recommender system that analyzes a candidate's resume, extract
 ## 🚀 Demo Preview
 
 ![video](
+
 https://github.com/user-attachments/assets/fdad644b-616e-4b2d-a825-4c9d138bb716
+
 )
 
 
