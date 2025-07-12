@@ -141,5 +141,5 @@ streamlit run app.py
 This project is licensed under the MIT License.
 
 Built by:
-Christy Maria Sebastian
+Christy Maria Sebastian <br>
 Linkedin: [Christy Maria Sebastian](https://www.linkedin.com/in/christymariasebastian/)
