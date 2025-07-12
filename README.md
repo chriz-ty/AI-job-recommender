@@ -4,7 +4,7 @@ An AI-powered job recommender system that analyzes a candidate's resume, extract
 
 ---
 
-## 🚀 Demo Preview
+## Demo Preview
 
 ![video](
 
@@ -18,32 +18,32 @@ https://github.com/user-attachments/assets/fdad644b-616e-4b2d-a825-4c9d138bb716
 
 ## Hosted Here: [visit Site](https://ai-job-recommender-bychriz.streamlit.app/)
 ---
-## 📌 Features
+## Features
 
-✅ Upload your **resume (PDF/txt)**  
-✅ Extract and display **skills from your resume**  
-✅ Match resume with **99+ job descriptions** using NLP  
-✅ Paste a **custom job description** to get a similarity score  
-✅ Shows **matched vs missing skills** for improvement  
-✅ Download top match results as a **CSV**
+- Upload your **resume (PDF/txt)**  
+- Extract and display **skills from your resume**  
+- Match resume with **99+ job descriptions** using NLP  
+- Paste a **custom job description** to get a similarity score  
+- Shows **matched vs missing skills** for improvement  
+- Download top match results as a **CSV**
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |------|---------|
-| 🐍 Python | Core programming language |
-| 🧾 Streamlit | Web interface for app |
-| 📦 Pandas | Data handling (CSV, DataFrames) |
-| 🤖 Sentence-Transformers (BERT) | Text embedding & similarity |
-| 📄 PyMuPDF (`fitz`) | PDF parsing |
-| 📊 scikit-learn | Cosine similarity |
-| 🔍 Regex & NLP | Text cleaning and skill extraction |
+|  Python | Core programming language |
+|  Streamlit | Web interface for app |
+|  Pandas | Data handling (CSV, DataFrames) |
+|  Sentence-Transformers (BERT) | Text embedding & similarity |
+|  PyMuPDF (`fitz`) | PDF parsing |
+|  scikit-learn | Cosine similarity |
+|  Regex & NLP | Text cleaning and skill extraction |
 
 ---
 
-## 📚 Project Workflow
+## Project Workflow
 
 ### 1. **Resume Upload**
 - Accepts `.pdf` or `.txt` files
@@ -70,7 +70,7 @@ https://github.com/user-attachments/assets/fdad644b-616e-4b2d-a825-4c9d138bb716
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 Smart-Job-Recommender/
 │
@@ -85,23 +85,23 @@ Smart-Job-Recommender/
 
 ---
 
-## 🧪 Sample Jobs Dataset
+## Sample Jobs Dataset
 
-Your job dataset (`sample_jobs.csv`) includes 99+ jobs across domains:
+The job dataset (`sample_jobs.csv`) includes 99+ jobs across domains:
 
-- 👨‍💻 Software, Data Science, AI, DevOps  
-- 📊 Business, Marketing, Sales  
-- 🎨 Design, Art, UX  
-- 🧪 Research, Education, Content Writing  
-- ⚙️ Engineering, Non-tech roles too  
+- Software, Data Science, AI, DevOps  
+- Business, Marketing, Sales  
+- Design, Art, UX  
+- Research, Education, Content Writing  
+- Engineering, Non-tech roles too  
 
 Each job entry has: `job_id`, `title`, `company`, `description`
 
 ---
 
-## 🧠 Models Used
+## Models Used
 
-### 📌 Sentence Transformer (BERT-based)
+### Sentence Transformer (BERT-based)
 - Model: `paraphrase-MiniLM-L6-v2`
 - Purpose: Converts resume & job descriptions to dense vector embeddings
 - Benefits:
@@ -109,13 +109,13 @@ Each job entry has: `job_id`, `title`, `company`, `description`
   - Works well for semantic matching
   - Lightweight and fast for web apps
 
-### 📌 Cosine Similarity (sklearn)
+### Cosine Similarity (sklearn)
 - Measures vector similarity between resume and job text
 - Higher score = better match
 
 ---
 
-## ⚙️ How to Run Locally
+## How to Run Locally
 
 ```bash
 # Clone the repo
@@ -129,15 +129,15 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## 🧭 What's next?????
-- ✅ Resume keyword highlighting
-- ✅ Visual charts (skill match bars, radar plots)
-- 🔐 User authentication and profile saving
-- 🌐 Multi-language support (translate job/resume)
-- 📄 Generate resume suggestions dynamically
-- 🧠 Use OpenAI/GPT for deeper resume analysis
+## What's next?????
+-  Resume keyword highlighting
+-  Visual charts (skill match bars, radar plots)
+-  User authentication and profile saving
+-  Multi-language support (translate job/resume)
+-  Generate resume suggestions dynamically
+-  Use OpenAI/GPT for deeper resume analysis
 
-## 📜 License
+## License
 This project is licensed under the MIT License.
 
 Built by:
