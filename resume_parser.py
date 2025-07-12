@@ -1,6 +1,5 @@
-# resume_parser.py
 
-import fitz  # PyMuPDF
+import fitz 
 import re
 
 def extract_text_from_pdf(pdf_path):
