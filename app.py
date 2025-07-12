@@ -23,7 +23,6 @@ if uploaded_file:
     st.subheader("📄 Extracted Resume Text")
     st.text_area("", resume_text, height=250)
 
-    # Extract and display resume skills
     resume_skills = extract_skills(resume_text)
     st.subheader("🧠 Skills Detected from Resume")
     if resume_skills:
@@ -31,14 +30,8 @@ if uploaded_file:
     else:
         st.warning("No recognizable skills found.")
 
-    # ==================================
-    # 🔀 Two-Column Layout Below Upload
-    # ==================================
     col1, col2 = st.columns(2)
 
-    # -------------------------------
-    # ✅ LEFT COLUMN: Top Job Matches
-    # -------------------------------
     with col1:
         st.markdown("### 🎯 Top Matches from Job Dataset")
         with st.spinner("🤖 Matching your resume..."):
@@ -46,7 +39,7 @@ if uploaded_file:
 
         if not matched_jobs.empty:
             st.dataframe(
-                matched_jobs[["title", "company", "similarity_score", "scaled_score"]].head(10).style.format({
+                matched_jobs[["title", "similarity_score", "scaled_score"]].head(10).style.format({
                     "similarity_score": "{:.2f}",
                     "scaled_score": "{:.2f}"
                 })
@@ -61,9 +54,6 @@ if uploaded_file:
         else:
             st.info("No strong job matches found.")
 
-    # ------------------------------------------
-    # 📝 RIGHT COLUMN: Custom Job Description
-    # ------------------------------------------
     with col2:
         st.markdown("### 📝 Match with a Custom Job Description")
 
